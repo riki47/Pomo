@@ -6,7 +6,7 @@ const port = 3000;
 
 //MIDDLEWARE
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 
 //model
 const EmployeeModel = require('./models/Employee');
