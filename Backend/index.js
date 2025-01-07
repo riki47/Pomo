@@ -11,7 +11,9 @@ app.use(cors());
 //model
 const EmployeeModel = require('./models/Employee');
 
-
+app.get('/',async(req,res)=>{
+    res.json("Hello World");
+})
 
 
 app.post('/register', async (req, res) => {
