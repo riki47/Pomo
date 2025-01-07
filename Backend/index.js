@@ -6,19 +6,12 @@ const port = 3000;
 
 //MIDDLEWARE
 app.use(express.json());
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-    next();
-});
+app.use(cors());
 
 //model
 const EmployeeModel = require('./models/Employee');
 
-app.get('/',async(req,res)=>{
-    res.json("Hello World");
-})
+
 
 
 app.post('/register', async (req, res) => {
