@@ -6,7 +6,11 @@ const port = 3000;
 
 //MIDDLEWARE
 app.use(express.json());
-// app.use(cors());
+app.use(cors({
+    origin: '*', // Allow requests from this origin
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+}));
 
 //model
 const EmployeeModel = require('./models/Employee');
