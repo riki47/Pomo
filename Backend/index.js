@@ -6,11 +6,12 @@ const port = 3000;
 
 //MIDDLEWARE
 app.use(express.json());
-app.use(cors({
-    origin: '*', // Allow requests from this origin
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-}));
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    next();
+});
 
 //model
 const EmployeeModel = require('./models/Employee');
