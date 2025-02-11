@@ -20,23 +20,19 @@ function Timer(props) {
   // Timer effect: count down while 'start' is true.
   useEffect(() => {
     let timer;
-    // If the timer is running, ensure the alarm is paused/reset.
     if (start) {
       alarmAudio.pause();
       alarmAudio.currentTime = 0;
     }
-    // When time reaches zero, play the alarm sound.
     if (time <= 0) {
       alarmAudio.play();
     }
-    // When time reaches zero and the timer was running, switch between focus and break.
     if (time <= 0 && start) {
       setStart(false);
       setIsFocus((prev) => !prev);
 
       setTime(isFocus ? breakTime * 60 : focusTime * 60);
     }
-    // If timer is active, start the countdown.
     if (start ) {
       timer = setInterval(() => {
         setTime((prevTime) => prevTime - 1);
