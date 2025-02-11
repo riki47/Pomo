@@ -22,7 +22,7 @@ const Signup = () => {
     console.log('Form submitted:', formData);
 
     try {
-        const res = await axios.post('http://localhost:3000/register', formData);
+        const res = await axios.post('https://pomo-weld.vercel.app/register', formData);
         console.log('Response:', res.data); 
         if (res.status === 201) {
             alert('Registration successful!');

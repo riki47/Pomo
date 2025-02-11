@@ -47,9 +47,9 @@ function AboutMe() {
               >
                 Video Streaming Website
                 <img
-                  className="rounded-lg mt-1 h-[7rem] w-[75%]"
+                  className="rounded-lg mt-1 w-[75%] h-24"
                   src={yt}
-                  alt="Video Streaming Website Thumbnail"
+                  alt="Tic Tac Toe Website Thumbnail"
                 />
               </a>
               <a

@@ -11,7 +11,7 @@ function StudyTracker({ email }) {
   useEffect(() => {
     const fetchStudyData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/study?email=${email}`);
+        const response = await axios.get(`https://pomo-weld.vercel.a\pp/api/study?email=${email}`);
         if (response.status === 200) {
           setStudySessions(response.data.sessions);
           const totalMinutes = response.data.sessions.reduce(
@@ -56,7 +56,7 @@ function StudyTracker({ email }) {
   // Log a study session
   const logStudySession = async (duration) => {
     try {
-      const response = await axios.post(`http://localhost:3000/api/study`, {
+      const response = await axios.post(`https://pomo-weld.vercel.app/api/study`, {
         email,
         duration,
       });
