@@ -81,15 +81,15 @@ function Timer(props) {
   };
 
   return (
-    <div className="h-36 m-0 w-[30rem] sm:w-[35rem] bg-[#6e5b4d] flex flex-row items-center justify-evenly rounded-xl shadow-lg border-2 border-[#2e2722] hover:border-[#7c6c5e]">
-      <div className="w-96 flex flex-col items-center justify-center rounded-lg p-4">
-        <p className="text-xl font-serif m-1 bg-[#2c2623] rounded-lg px-4 text-[#f4ede4]">
+    <div className="pt-1 text-md pb-2 max-w-[97vw] w-[30rem] overflow-hidden sm:w-[35rem] bg-[#6e5b4d] flex flex-col sm:flex-row items-center justify-evenly rounded-xl shadow-lg border-2 border-[#2e2722] hover:border-[#7c6c5e]">
+      <div className="w-96 flex flex-col items-center justify-center rounded-lg p-1">
+        <p className="text-md font-serif m-1 bg-[#2c2623] rounded-lg px-4 text-[#f4ede4]">
           {isFocus ? 'Focus!' : 'Break!'}
         </p>
         <p className="text-2xl font-serif text-[#f4ede4] mb-1 bg-[#2c2623] w-56 h-9 rounded-lg flex items-center justify-center">
           {formatTime(time)}
         </p>
-        <div className="bg-[#2e2723] w-full flex flex-row items-center justify-evenly rounded-lg p-2">
+        <div className="bg-[#2e2723] max-w-[94vw] w-full flex flex-row items-center justify-evenly rounded-lg p-2">
           <button
             className="bg-[#806d63] text-[#f4ede4] px-4 py-1 rounded-md hover:bg-[#5f5048] transition duration-300"
             onClick={() => {

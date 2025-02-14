@@ -114,7 +114,7 @@ function Sounds() {
 
   const content = (
     <div
-      className="w-[18.8rem] transition-all duration-1000 h-[25rem] flex flex-wrap justify-evenly items-center rounded-lg p-4 bg-[#56463c] border-1 border-[#a59389] shadow-md"
+      className="max-w-[97vw] w-[18.8rem] transition-all duration-700 h-[25rem] overflow-scroll flex flex-wrap justify-evenly items-center rounded-lg p-4 bg-[#56463c] border-1 border-[#a59389] shadow-md"
       style={{
         height: hide ? '0' : '',
         opacity: hide ? 0 : 1,
@@ -129,7 +129,7 @@ function Sounds() {
   );
 
   return (
-    <div className="w-[20rem] text-center font-bold text-[#d4c2b0] rounded-lg flex flex-col justify-center items-center">
+    <div className="max-w-[97vw] w-[20rem] text-center font-bold text-[#d4c2b0] rounded-lg flex flex-col justify-center items-center">
       <button
         onClick={() => {
           setHide(!hide);
@@ -137,7 +137,7 @@ function Sounds() {
           audio.play();
           audio.volume = 0.23;
         }}
-        className="hover:border-[#ffe5d2] border-[0.1rem] hover:border-[0.1rem]  border-[#412203] w-[19rem] rounded-xl font-serif tracking-wide bg-[#50443b] text-[#e8dec8] px-4 py-2 shadow-md "
+        className="hover:border-[#ffe5d2] border-[0.1rem] hover:border-[0.1rem]  border-[#412203] max-w-[90vw] w-[19rem] rounded-xl font-serif tracking-wide bg-[#50443b] text-[#e8dec8] px-4 py-2 shadow-md "
       >
         AMBIENCE SOUNDS {hide ? '⬇' : '⬆'}
       </button>

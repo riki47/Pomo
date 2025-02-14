@@ -42,7 +42,7 @@ function Main() {
 
   return (
     <div
-      className="relative w-[100vw] h-[100vh]"
+      className="relative w-[100vw] min-h-[94vh]"
       style={{
         backgroundImage: bgImage,
         backgroundSize: 'cover',
@@ -50,7 +50,7 @@ function Main() {
         overflow: 'auto',
       }}
     >
-      <div className="transition-all duration-1000 ease-in-out relative w-full h-full flex flex-col items-center justify-start py-4 font-serif">
+      <div className="transition-all duration-1000 ease-in-out relative w-full h-full flex flex-col items-center justify-start pt-[2rem] font-serif">
         <div className='flex flex-wrap justify-center items-center'>
           {/* Pass an empty string for email as backend is removed */}
           <Timer setBreak={setBreak} breakTime={breakTime} email="" />

@@ -64,3 +64,22 @@ body{
     background: #6f6252; /* Slightly lighter brown when hovered */
   }
   
+
+  .todo
+  {
+    background-image: url("https://i.pinimg.com/originals/d8/9f/a3/d89fa383107571201d3b2673e4e9a51b.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .lk
+  {
+    text-decoration: none;
+  }
+
+
+  .bbg
+  {
+    background-image: url(./assets/Images/img.jpg);
+  }
