@@ -34,7 +34,7 @@ function App() {
   return (
     <Router>
       <div>
-        <nav className="text-sm p-2 bg-[#2c2623] text-[#e8dec8] font-serif flex flex-wrap justify-between items-center shadow-md shadow-[#3f3329] border-b-[1px] border-[#524034]">
+        <nav className="h-[8vh] p-2 bg-[#2c2623] text-[#e8dec8] font-serif flex flex-wrap justify-between items-center shadow-md shadow-[#3f3329] border-b-[1px] border-[#524034]">
           <div className="flex items-center space-x-6">
             <h1 className="text-lg font-bold hidden sm:block tracking-wide text-[#c4b7a6]">𝒫𝑜𝓂𝑜𝒹𝑜𝓇𝑜</h1>
             <Link

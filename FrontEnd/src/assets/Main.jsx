@@ -42,7 +42,7 @@ function Main() {
 
   return (
     <div
-      className="relative w-[100vw] min-h-[94vh]"
+      className="relative w-[100vw] min-h-[92vh]"
       style={{
         backgroundImage: bgImage,
         backgroundSize: 'cover',

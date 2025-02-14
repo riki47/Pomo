@@ -33,7 +33,7 @@ function TodoApp() {
   ));
 
   return (
-    <div className="min-h-[94vh] w-[100vw] todo flex flex-col items-center justify-start bg-gradient-to-b p-1">
+    <div className="min-h-[92vh] w-[100vw] todo flex flex-col items-center justify-start bg-gradient-to-b p-1">
       <div className=" py-6 max-w-md ">
         <h1 className="text-center text-3xl font-bold text-white mb-4">To Do List</h1>
         <div className="flex space-x-2 mb-4">
