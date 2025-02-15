@@ -1,3 +1,1 @@
-# Pomo
-# Pomo
-# Pomo
+# Pomodoro Study App
